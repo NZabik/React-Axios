@@ -26,8 +26,12 @@ function Author() {
                         <li>{"auteur id: " + data.id}</li>
                         <li>{"Prénom: " + data.firstName}</li>
                         <li>{"Nom: " + data.lastName}</li>
-                        <ul>{data.books.map(function(d,id){ return (<li key={id}>{"Livre id: " + d.id + " / Titre: " + d.title + " / Quatrième: " + d.coverText}</li>)})}
-                            
+                        <ul>{data.books.map(function (d, id) {
+                            return (
+                                <li key={id}>{"Livre id: " + d.id + " / Titre: " + d.title + " / Quatrième: " + d.coverText}</li>
+                            )
+                        })}
+
                         </ul>
                     </ul>
                 );
